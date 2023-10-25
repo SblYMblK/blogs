@@ -40,7 +40,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     'blogs.apps.BlogConfig'
+=======
+    'blogs.apps.BlogConfig',
+    'google_translate',
+>>>>>>> c79206b (Second commit)
 ]
 
 MIDDLEWARE = [
@@ -81,9 +86,15 @@ WSGI_APPLICATION = 'djangoProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
+<<<<<<< HEAD
         'NAME': 'test543',
         'USER': 'root',
         'PASSWORD': 'root',
+=======
+        'NAME': 'django',
+        'USER': 'root',
+        'PASSWORD': 'ab3703039',
+>>>>>>> c79206b (Second commit)
         'HOST': 'localhost',
         'PORT': '3306',
         'OPTIONS': {

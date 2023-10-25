@@ -11,6 +11,7 @@
 {% endblock %}
 
 {% block content %}
+<<<<<<< HEAD
     <h1 text-align = "center">Регистрация</h1>
     <p text-align = "center">Пожалуйста, заполните форму чтобы зарегестрироваться</p>
     <form action="." method="post">
@@ -30,6 +31,23 @@
 
         <label for="psw"><b>Повторите пароль</b></label>
 		<input type="password" placeholder="Повторите пароль" name="password2" required>
+=======
+    <form method="post" action="{% url 'login' %}">
+	  {% csrf_token %}
+        <div class="text-center mb-4">
+            <img class="mb-4" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <h1 text-align = "center">Регистрация</h1>
+    <p text-align = "center">Заполните форму ниже для регистрации пользователя</p>
+    <form action="." method="post">
+        {% csrf_token %}
+        <div class="container">
+		<input type="text" placeholder="User name" name="username" required>
+		<input type="text" placeholder="Email" name="email" required>
+        <input type="text" placeholder="Phone number" name="phone" required>
+		<input type="text" placeholder="Name" name="first_name" required>
+		<input type="password" placeholder="Password" name="password" required>
+		<input type="password" placeholder="Password again" name="password2" required>
+>>>>>>> c79206b (Second commit)
 
 		<button type="submit" value="registration">Зарегистрироваться</button>
 	  </div>
@@ -50,7 +68,11 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
+<<<<<<< HEAD
     background-color: #4CAF50;
+=======
+    background-color: #f016bd;
+>>>>>>> c79206b (Second commit)
     color: white;
     padding: 14px 20px;
     margin: 8px 0;

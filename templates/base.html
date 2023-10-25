@@ -4,12 +4,20 @@
 
 {% block title %}
 <head>
+<<<<<<< HEAD
+=======
+    {% load google_translate %}
+>>>>>>> c79206b (Second commit)
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
+<<<<<<< HEAD
 	<title>Блог</title>
+=======
+	<title>Федеративное обучение и его оценка с помощью существующих моделей и MLOps-инструментов</title>
+>>>>>>> c79206b (Second commit)
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<meta name="google" content="notranslate" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,6 +25,7 @@
 		crossorigin="anonymous" />
 </head>
 {% endblock %}
+<<<<<<< HEAD
 
 
 <body>
@@ -52,6 +61,37 @@
 
      <style>
      </style>
+=======
+<body>
+<nav class="site-header sticky-top py-1">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обложка "Федеративное обучение"</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+</html>
+    {% google_translate type='vertical' language='ru' %}
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" href="#" aria-label="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Главная</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
+        </a>
+        <a class="py-2 d-none d-md-inline-block" href="{% url 'main' %}"></a>
+        <a class="py-2 d-none d-md-inline-block" href="/">Главная</a>
+        <a class="py-2 d-none d-md-inline-block" href="/login">Войти</a>
+        <a class="py-2 d-none d-md-inline-block" href="/registration">Регистрация</a>
+        <a class="py-2 d-none d-md-inline-block" href="/login_dialog">Модальная авторизация</a>
+        <a class="py-2 d-none d-md-inline-block" href="/about">О нас</a>
+      </div>
+    </nav>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+<div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+>>>>>>> c79206b (Second commit)
 
     <div id="content">
       {% block content %}
@@ -79,4 +119,8 @@
     {% endblock scripts %}
 
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> c79206b (Second commit)

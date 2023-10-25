@@ -7,6 +7,10 @@ from django.shortcuts import render, resolve_url, get_object_or_404
 from django.views.generic import ListView, DetailView
 
 from blogs.models import Post
+<<<<<<< HEAD
+=======
+from googletrans import Translator
+>>>>>>> c79206b (Second commit)
 
 
 def blog_view(request, page=1):
@@ -15,12 +19,16 @@ def blog_view(request, page=1):
         lang = request.GET.get('lang', 'ru')
         paginator = Paginator(posts, per_page=2)
         page_object = paginator.get_page(page)
+<<<<<<< HEAD
         if lang == 'en':
             blog_translate = GoogleTranslator(source='ru', target='en')
             for post in page_object:
                 time.sleep(0.5)
                 post.body = blog_translate.translate(post.body)
                 post.title = blog_translate.translate(post.title)
+=======
+        request.session['_language'] = lang
+>>>>>>> c79206b (Second commit)
         context = {"page_obj": page_object, 'current_page': page, 'lang': 'en' if lang == 'ru' else 'ru'}
         return render(request, 'blogs/main.html', context)
     else:
