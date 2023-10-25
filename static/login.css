@@ -15,7 +15,11 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
+<<<<<<< HEAD
     background-color: #4CAF50;
+=======
+    background-color: #f016bd;
+>>>>>>> c79206b (Second commit)
     color: white;
     padding: 14px 20px;
     margin: 8px 0;

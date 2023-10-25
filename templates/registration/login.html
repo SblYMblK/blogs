@@ -14,6 +14,7 @@
     <div>
 	<form method="post" action="{% url 'login' %}">
 	  {% csrf_token %}
+<<<<<<< HEAD
 
 	  <div class="container">
 		<label for="uname"><b>Логин</b></label>
@@ -21,12 +22,26 @@
 
 		<label for="psw"><b>Пароль</b></label>
 		<input type="password" placeholder="Введите пароль" name="password" required>
+=======
+        <div class="text-center mb-4">
+            <img class="mb-4" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+            <h1 class="h3 mb-3 font-weight-normal">Вход</h1>
+            <p>Build form controls with floating labels via the <code>:placeholder-shown</code> pseudo-element. <a href="https://caniuse.com/#feat=css-placeholder-shown">Works in latest Chrome, Safari, Firefox, and IE 10/11 (prefixed).</a></p>
+
+	  <div class="container">
+		<input type="text" id="inputEmail" class="form-control" placeholder="User name" name="username" required="" autofocus="">
+		<input type="password" placeholder="Password" name="password" required>
+>>>>>>> c79206b (Second commit)
 
 		<button type="submit" value="login">Войти</button>
 	  </div>
 	</form>
     </div>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> c79206b (Second commit)
     <style>
     /* Bordered form */
 
@@ -42,7 +57,11 @@
 
     /* Set a style for all buttons */
     button {
+<<<<<<< HEAD
         background-color: #4CAF50;
+=======
+        background-color: #f016bd;
+>>>>>>> c79206b (Second commit)
         color: white;
         padding: 14px 20px;
         margin: 8px 0;

@@ -1,10 +1,16 @@
 {% block sidebar %}
+<<<<<<< HEAD
 
     <div class="col-md-3 float-right ">
         <div class="card my-4">
             <div class="card-body">
                 <a href="{% url 'main_pagination' current_page %}?lang={{ lang | urlencode }}" class="btn btn-danger">Перевести</a>
             </div>
+=======
+    <div class="col-md-8 float-xl-right ">
+        <div class="card p-0">
+            <a type="submit" class="btn btn-outline-secondary" href="{% url 'main_pagination' current_page %}?lang={{ lang | urlencode }}">Перевод</a>
+>>>>>>> c79206b (Second commit)
         </div>
     </div>
 
